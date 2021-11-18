@@ -54,4 +54,4 @@ auto main(int argv, char* argv[]) -> int
 	std::cout << new_line;
 	return 0;
 }
-}
+
