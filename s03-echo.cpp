@@ -50,7 +50,7 @@ auto main(int argv, char* argv[]) -> int
 			std::cout << each << seperator;		
 		}
 	}
-}
+
 	std::cout << new_line;
 	return 0;
 }
