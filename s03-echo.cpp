@@ -14,7 +14,7 @@ std::vector <std::string> create_vector(int const argc, char* argv[])
 	vector_to_create.erase(vector_to_create.begin());
 	
 	return vector_to_create;
-	}
+}
 	
 auto main(int argv, char* argv[]) -> int
 {
