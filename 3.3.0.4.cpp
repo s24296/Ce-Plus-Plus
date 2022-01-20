@@ -6,26 +6,35 @@ using namespace std;
 
 int main()
 {
-    auto v=vector<int>();
+	auto v=vector<int>();
+	
+	int n;
+	
+	cout<<"Ile liczb chcesz wpisac do tablicy?"<<endl;
+	cin>>n;
+	
+	float rozmiar=n;
+	for(int i=0; i<=n; i++)
+	{
+		int b=rand()%a+1;
+		v.push_back(b);
+	}
 
-    int n;
-        cout<<"Ile liczb chcesz wpisaæ do tablicy?"<<endl;
-        cin>>n;
+	for int(i=0; i<n; i++)
+	{
+		cout<<v.at(i)<<endl;
+	}
 
-    float rozmiar=n;
-    for (int i=0; i<n; i++;)
-    {
-        cout<<v.at(i)<<endl;
-    }
+	float srednia=0.0
+	for(int i=0; i<rozmiar;)
+	{
+		srednia=srednia+v.at(i);
+	}
 
-    float srednia = 0.0;
-    for (int i=0; i<rozmiar;)
-    {
-        srednia=srednia+v.at(i);
-    }
-        srednia=srednia/size;
-        cout<<"Srednia arytmetyczna podanych liczb wynosi: "<<srednia<<endl;
-
-
-return 0;
+	srednia=srednia/size;
+	cout<<"Srednia arytmetyczna podanych liczb wynosi: "<<srednia<<endl;
+	
+	
+return 0;	
 }
+
