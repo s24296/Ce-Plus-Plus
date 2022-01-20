@@ -9,12 +9,12 @@ void memrev(void*s, size_t n)
 	auto proxy=reinterpret_cast<char*>(s);
 	char r[n];
 	
-	for(int i=0; i<1; i++)
+	for(int i=0; i<n; i++)
 	{
-		r[i]=proxy[1-1-i];
+		r[i]=proxy[n-1-i];
 	}
 	
-	for(int i=0; i<1; i++)
+	for(int i=0; i<n; i++)
 	{
 		proxy[i]=r[i];
 	}
