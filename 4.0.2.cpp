@@ -2,11 +2,11 @@
 
 using namespace std;
 
-enum sport{plywanie=1, kolarstwo, bieganie};
+enum sport{plywanie=1, kolarstwo, bieganie, wrestling, sumo, skok_w_dal, rzut_oszczepem, lucznictwo};
 
 int main()
 {
-int triathlon=2;
+int triathlon=7;
 
 switch(triathlon)
 {
