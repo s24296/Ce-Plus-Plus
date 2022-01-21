@@ -29,41 +29,46 @@ Student get_best_Student(vector<Student>const&x)
 {
 	int a;
 	int best;
-	Student best;
+	Student be;
 	
 	for(auto i=0; i<x.size(); i++)
 	{
 		a=average_of(x.at(i));
-		if(best<=a)
+		if(be<=a)
 		{
-			best=a;
+			be=a;
 		}
 	}
 
 	for(auto i=0; i<x.size(); i++)
 	{
 		if(best==average_of(x.at(i)))
-		break;
+		{
+			be=x.at(i);
+			break;
+		}
+		
 	}	
+return be;
 }
 
 int main()
 {
-	Student 1;
+	Student pie;
 	p.imie="Jan";
 	p.nazwisko="Kowalski";
 	p.oceny.push_back(4);
 	p.oceny.push_back(4);
 	p.oceny.push_back(5);
 	
-	Student 2;
+	Student dru;
 	p.imie="Kowal";
 	p.nazwisko="Janowski";
 	p.oceny.push_back(3);
 	p.oceny.push_back(4);
 	p.oceny.push_back(5);
 	
-	Student 3;
+	Student trz;
 	p.imie="Maciej";
 	p.nazwisko="Piotrowicz";
 	p.oceny.push_back(5);
@@ -75,9 +80,9 @@ int main()
 	studenci.push_back(2);
 	studenci.push_back(3);
 	
-	cout<<average_of(1)<<endl;
-	cout<<average_of(1)<<endl;
-	cout<<average_of(1)<<endl;
+	cout<<average_of(pie)<<endl;
+	cout<<average_of(dru)<<endl;
+	cout<<average_of(trz)<<endl;
 	cout<<"Najlepszy student: "<<get_best_Student(studenci).imie<<endl;
 	
 return 0;	
