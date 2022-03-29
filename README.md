@@ -1,3 +1,3 @@
-# Zadania z zajęć z Programowania
+# C++
 
 staram sie jak moge :)
